@@ -28,3 +28,21 @@ test("divide 4 and 2 to get 2", () => {
 test('cipher joy to kpz using shift 2', () => {
     expect(formulas.ceaserCipher('joy', 1)).toBe('kpz')
 })
+
+test('cipher joy to kpz using shift 2', () => {
+    expect(formulas.ceaserCipher('Hello', 3)).toBe('Khoor')
+})
+
+test('cipher joy to kpz using shift 2', () => {
+    expect(formulas.ceaserCipher('Hello, World!', 3)).toBe('Khoor, Zruog!')
+})
+
+test('get the average', () => {
+    expect(formulas.analyzeArray([1, 2, 4, 3])).toEqual({
+        average: 2.5,
+        length: 4,
+        max: 4,
+        min: 1
+    })
+})
+

@@ -41,7 +41,24 @@ const ceaserCipher = (word, shift) => {
     return result
 }
 
-console.log(ceaserCipher('joy', 2))
+
+
+
+const analyzeArray = (arr) => {
+    const min = Math.min(...arr)
+    const max = Math.max(...arr)
+    const average = arr.reduce((sum, value) => sum + value, 0) / arr.length
+    const length = arr.length
+    return {
+        average,
+        min,
+        max,
+        length
+
+    }
+}
+
+analyzeArray([1, 8, 3, 4, 2, 6])
 
 
 module.exports = {
@@ -49,4 +66,5 @@ module.exports = {
     capitalize: capitalize,
     calculator: calculator,
     ceaserCipher: ceaserCipher,
+    analyzeArray: analyzeArray
 }

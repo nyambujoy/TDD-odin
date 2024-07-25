@@ -24,3 +24,7 @@ test("multiply 2 and 2 to get 4", () => {
 test("divide 4 and 2 to get 2", () => {
     expect(formulas.calculator.divide(4, 2)).toBe(2)
 })
+
+test('cipher joy to kpz using shift 2', () => {
+    expect(formulas.ceaserCipher('joy', 1)).toBe('kpz')
+})
